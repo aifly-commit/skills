@@ -1,7 +1,7 @@
 ---
 name: wecom-image-sender
-description: 企业微信图片发送技能。支持AI生成、URL下载、本地上传三种图片来源，自动格式转换和大小优化。适用于新闻配图、数据可视化、内容配图等场景。
-version: "1.0.0"
+description: 企业微信图片发送技能。支持URL下载和本地上传，自动格式转换和大小优化。适用于新闻配图、数据可视化、内容配图等场景。通用设计，适用于所有OpenClaw用户。
+version: "2.0.0"
 user-invocable: true
 metadata:
   openclaw:
@@ -10,16 +10,16 @@ metadata:
     requires:
       bins:
         - python3
-      env:
-        - GEMINI_API_KEY
       tools:
         - message
     tags:
       - image
       - wecom
       - enterprise-wechat
-      - image-generation
       - image-upload
+      - universal
+      - general-purpose
+    scope: universal
 ---
 
 # 企业微信图片发送技能
